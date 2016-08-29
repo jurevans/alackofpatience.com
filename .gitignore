@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+*.swp
+api/bin
+api/lib
+api/include

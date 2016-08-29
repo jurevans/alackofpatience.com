@@ -1,0 +1,26 @@
+{
+  "name": "alackofpatience",
+  "version": "1.0.0",
+  "description": "alackofpatience.com project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/justin_evans/contemporaryromance_redesign.git"
+  },
+  "author": "Justin Evans",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/justin_evans/contemporaryromance_redesign#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-notify": "^2.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^1.7.2"
+  }
+}

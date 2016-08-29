@@ -1,0 +1,12 @@
+[
+  {
+    "model": "app.user",
+    "pk": 1,
+    "fields": {
+      "first_name": "Justin",
+      "last_name": "Evans",
+      "password": "test1234",
+      "email": "jurevans@gmail.com"
+    }
+  }
+]

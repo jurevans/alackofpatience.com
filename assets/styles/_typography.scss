@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+
+$lato: Lato, sans-serif;
+
+@font-face {
+  font-family: 'Amberlight';
+  src: url('../fonts/Amberlight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Amberlight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Amberlight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Amberlight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Amberlight.svg#Amberlight') format('svg'); /* Legacy iOS */
+}
+
+$amberlight: Amberlight, sans-serif;
+$didot: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
