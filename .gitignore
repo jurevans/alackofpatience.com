@@ -4,3 +4,7 @@ node_modules
 api/bin
 api/lib
 api/include
+api/app/migrations/
+api/app/blog/migrations/
+api/app/db.sqlite3
+dist/

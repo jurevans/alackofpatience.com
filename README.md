@@ -8,18 +8,18 @@ To install frontend:
 npm install
 ```
 
-To build:
+To build SASS:
 ---------
 
 ```
 gulp
 ```
 
-To build & watch:
+To build JS and watch:
 -----------------
 
 ```
-gulp watch
+webpack-dev-server
 ```
 
 To install REST API (using virtualenv):
@@ -31,6 +31,7 @@ pip install django
 pip install django-rest-framework
 pip install httpie
 python api/app/manage.py makemigrations
+python api/app/manage.py makemigrations blog
 python api/app/manage.py migrate
 python api/app/manage.py runserver
 ```
