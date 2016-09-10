@@ -1,26 +1,31 @@
-'use strict';
-
 var webpack = require('webpack');
-var path = require('path');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'assets/scripts/main.js'),
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
+    './src/index.jsx'
+  ],
+  module: {
+    loaders: [{
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      loader: 'react-hot!babel'
+    }]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   output: {
-    path: path.resolve(__dirname, 'dist/scripts'),
+    path: __dirname + '/dist',
+    publicPath: '/',
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
   plugins: [
-    new webpack.ProvidePlugin({
-      'angular': 'angular'
-    }),
-    new BrowserSyncPlugin({
-      // browse to http://localhost:3000/ during development, 
-      // ./public directory is being served 
-      host: 'localhost',
-      port: 3000,
-      server: { baseDir: ['dist'] }
-    })
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
-
