@@ -1,1 +1,1 @@
-# react-example
+# Django-Rest-Framework and React/Redux
